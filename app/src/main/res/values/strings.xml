@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="add_your_movie_here">add your movie here</string>
+    <string name="add_your_genre">add your genre</string>
+    <string name="add_your_director">Add your director</string>
+    <string name="add_stars">Add stars</string>
+    <string name="add_writer">Add Writer</string>
+    <string name="add_summary">Add Summary</string>
+    <string name="new_release_movie_list">New Release Movie List</string>
+    <string name="top_movie">Top movie</string>
+    <string name="movie_list">Movie List</string>
+    <string name="new_release_movie">New release movie</string>
+    <string-array name="imdbrating">
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>5</item>
+        <item>5.5</item>
+        <item>6</item>
+        <item>6.5</item>
+        <item>7</item>
+        <item>7.5</item>
+        <item>8</item>
+        <item>8.5</item>
+        <item>9</item>
+        <item>9.5</item>
+        <item>10</item>
+
+    </string-array>
+</resources>
