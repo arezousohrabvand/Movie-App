@@ -13,7 +13,7 @@ class TopMovieActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityTopMovieBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.nameTextView.text="Hello "+intent.getStringExtra("userName")
+
 
     }
 }

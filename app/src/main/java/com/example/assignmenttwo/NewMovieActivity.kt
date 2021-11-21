@@ -15,7 +15,6 @@ class NewMovieActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityNewMovieBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.userTextView.text="Hello "+intent.getStringExtra("userName")
 
 
 

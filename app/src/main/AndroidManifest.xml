@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentTwo">
         <activity
-            android:name=".MovieListActivity"
+            android:name=".MovieRecyclerActivity"
             android:exported="false" />
+        <activity
+            android:name=".MovieListActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TopMovieActivity"
             android:exported="true"

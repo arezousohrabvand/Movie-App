@@ -20,14 +20,18 @@ class MovieListActivity : AppCompatActivity() {
          val query=db.get().addOnSuccessListener {
              documents->
              for (document in documents){
-                 Log.i("Database Response","${document.data}")
+                 Log.i("Database_Response","${document.data}")
 
                  val movie=document.toObject(Movies::class.java)
 
                  val txtView=TextView(this)
                  txtView.text=movie.movieName
                  txtView.textSize=25f
+                 val txtView2=TextView(this)
+                 txtView2.text=movie.genreMovie
+                 txtView2.textSize=15f
                  binding.linearLayout.addView(txtView)
+                 binding.linearLayout.addView(txtView2)
 
              }
          }

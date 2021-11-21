@@ -10,6 +10,7 @@
     <string name="top_movie">Top movie</string>
     <string name="movie_list">Movie List</string>
     <string name="new_release_movie">New release movie</string>
+    <string name="release_movie">Release Movie</string>
     <string-array name="imdbrating">
         <item>1</item>
         <item>1.5</item>
