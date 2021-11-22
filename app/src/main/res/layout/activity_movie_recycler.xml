@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#673AB7"
+    android:scrollbars="none"
     tools:context=".MovieRecyclerActivity">
 
     <TextView
@@ -13,20 +15,30 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="120dp"
+        android:background="#DCFFEB3B"
         android:gravity="center"
         android:text="@string/release_movie"
-        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="#102142"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movieRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="5dp"
+        android:background="#4040BF"
+        android:clipToPadding="false"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="never"
+        android:scrollbarSize="8dp"
+        android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

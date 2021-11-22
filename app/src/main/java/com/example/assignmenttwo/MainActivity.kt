@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.newMovieBtn.setOnClickListener{
-            var intent= Intent(this,MovieListActivity::class.java)
+            var intent= Intent(this,MovieRecyclerActivity::class.java)
             startActivity(intent)
 
         }
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
             return true
         }
         if(id == R.id.list){
-            val startMovieList = Intent(this, MovieListActivity::class.java)
+            val startMovieList = Intent(this, MovieRecyclerActivity::class.java)
             startActivity(startMovieList)
             Toast.makeText(this,"You choose Movie list" ,Toast.LENGTH_LONG).show()
             return true
