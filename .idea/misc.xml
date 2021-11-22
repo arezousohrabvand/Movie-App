@@ -7,12 +7,15 @@
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/drawable/grid_item_selector.xml" value="0.209375" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/drawable/selected_background.xml" value="0.209375" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_movie_details.xml" value="0.6" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_movie_list.xml" value="0.2" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_movie_recycler.xml" value="0.264" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_new_movie.xml" value="0.264" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_top_movie.xml" value="0.7836593785960875" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/item_movie_grid.xml" value="0.2" />
+        <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/menu/main_menu.xml" value="0.72" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/menu/menu_item.xml" value="0.264" />
+        <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/menu/search_menu.xml" value="0.264" />
       </map>
     </option>
   </component>

@@ -37,7 +37,7 @@ class MovieListViewModel :ViewModel(){
                         moviesList.add(movie)
                     }catch(e : Exception)
                     {
-                        Log.i("DB_Response", document.toString())
+                        Log.i("Database_Response", document.toString())
                     }
 
                 }

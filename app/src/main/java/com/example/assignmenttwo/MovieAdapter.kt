@@ -8,6 +8,8 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
+
+
 class MovieAdapter (
     val  context: Context,
     val movies: List<Movies>):RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
@@ -17,6 +19,7 @@ class MovieAdapter (
             val summartTextView=itemView.findViewById<TextView>(R.id.summmaryMovie)
             val directorTextView=itemView.findViewById<TextView>(R.id.directorMovie)
             val rating=itemView.findViewById<RatingBar>(R.id.ratingBar)
+
 
         }
 
@@ -35,7 +38,10 @@ class MovieAdapter (
             directorTextView.text=movie.directorMovie
             rating.rating=movie.imdbrating!!.toFloat()
 
+
+
         }
+        //holder.initialize(movies.get(position),clickListener)
     }
 
     override fun getItemCount(): Int {
@@ -44,7 +50,9 @@ class MovieAdapter (
 
     }
 
-interface MovieItemListener {
-    fun movieSelected(movies: Movies)
+interface OnMovieClickListener {
+    fun onMovieClicked(movies: Movies,position: Int)
+
+
 
 }

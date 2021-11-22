@@ -7,7 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import com.example.assignmenttwo.databinding.ActivityMainBinding
-import com.example.assignmenttwo.databinding.ActivityNewMovieBinding
+import com.firebase.ui.auth.AuthUI
 
 class MainActivity : AppCompatActivity() {
     //setup view binding
@@ -30,6 +30,16 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        binding.logoutBtn.setOnClickListener {
+            AuthUI.getInstance().signOut(this)
+                .addOnSuccessListener {
+                    val intent = Intent(this, SigninActivity::class.java)
+                    startActivity(intent)
+//                  this.finish()
+                    Toast.makeText(this, "Successfully Log Out", Toast.LENGTH_SHORT).show()
+                }
+        }
+
 
     }
 
@@ -40,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id=item.itemId
-        if(id == R.id.newRelease){
+        if(id == R.id.add){
             val startNewMovie = Intent(this, NewMovieActivity::class.java)
             startActivity(startNewMovie )
             Toast.makeText(this,"You choose New release Movie" ,Toast.LENGTH_LONG).show()

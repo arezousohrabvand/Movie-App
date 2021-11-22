@@ -1,7 +1,12 @@
 package com.example.assignmenttwo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.SearchView
+import android.widget.Toast
 import androidx.activity.viewModels
 import com.example.assignmenttwo.databinding.ActivityMovieListBinding
 import com.example.assignmenttwo.databinding.ActivityMovieRecyclerBinding
@@ -23,5 +28,8 @@ class MovieRecyclerActivity : AppCompatActivity() {
         })
 
         }
+
+
+
 
 }
