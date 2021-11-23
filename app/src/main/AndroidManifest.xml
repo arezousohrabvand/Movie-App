@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentTwo">
+
         <activity
             android:name=".SigninActivity"
             android:exported="true">
@@ -27,18 +28,12 @@
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".TopMovieActivity"
-            android:exported="true"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".NewMovieActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

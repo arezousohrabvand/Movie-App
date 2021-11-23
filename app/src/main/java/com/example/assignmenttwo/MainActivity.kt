@@ -30,12 +30,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
         binding.logoutBtn.setOnClickListener {
             AuthUI.getInstance().signOut(this)
                 .addOnSuccessListener {
                     val intent = Intent(this, SigninActivity::class.java)
                     startActivity(intent)
-//                  this.finish()
                     Toast.makeText(this, "Successfully Log Out", Toast.LENGTH_SHORT).show()
                 }
         }
@@ -56,11 +56,13 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"You choose New release Movie" ,Toast.LENGTH_LONG).show()
           return true
         }
-        if(id == R.id.top){
-            val startTopMovie = Intent(this, TopMovieActivity::class.java)
-            startActivity(startTopMovie)
-            Toast.makeText(this,"You choose Top Movie" ,Toast.LENGTH_LONG).show()
-            return true
+        if(id == R.id.sign_out){
+            AuthUI.getInstance().signOut(this)
+                .addOnSuccessListener {
+                    val intent = Intent(this, SigninActivity::class.java)
+                    startActivity(intent)
+                    Toast.makeText(this, "Successfully Log Out", Toast.LENGTH_SHORT).show()
+                }
         }
         if(id == R.id.list){
             val startMovieList = Intent(this, MovieRecyclerActivity::class.java)

@@ -41,7 +41,7 @@ class MovieAdapter (
 
 
         }
-        //holder.initialize(movies.get(position),clickListener)
+
     }
 
     override fun getItemCount(): Int {

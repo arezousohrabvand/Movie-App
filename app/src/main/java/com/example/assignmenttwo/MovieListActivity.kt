@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import com.example.assignmenttwo.databinding.ActivityMovieListBinding
-import com.example.assignmenttwo.databinding.ActivityTopMovieBinding
+
 import com.google.firebase.firestore.FirebaseFirestore
 
 class MovieListActivity : AppCompatActivity() {

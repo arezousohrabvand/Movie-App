@@ -2,25 +2,29 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:title="@string/movie_list"
         android:id="@+id/list"
         android:icon="@drawable/viewlist_icon"
-        app:showAsAction="ifRoom"
-        android:iconTint="#00004d"/>
+        android:iconTint="#00004d"
+        android:title="@string/movie_list"
+        app:showAsAction="always" />
     <item
-        android:title="@string/profile"
         android:id="@+id/profile"
         android:icon="@drawable/profile_icon"
-        app:showAsAction="ifRoom"
-        android:iconTint="#00004d"/>
+        android:iconTint="#00004d"
+        android:title="@string/profile"
+        app:showAsAction="always" />
     <item
-        android:title="add to list"
         android:id="@+id/add"
         android:icon="@drawable/add_icon"
-        app:showAsAction="ifRoom"
-        android:iconTint="#00004d"/>
-
-
+        android:iconTint="#00004d"
+        android:title="add to list"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/sign_out"
+        android:icon="@drawable/signout"
+        android:iconTint="#00004d"
+        android:title="signout"
+        app:showAsAction="always" />
 
 
 </menu>
