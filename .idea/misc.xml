@@ -10,10 +10,12 @@
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_movie_details.xml" value="0.6" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_movie_list.xml" value="0.2" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_movie_recycler.xml" value="0.264" />
+        <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_movie_review.xml" value="0.264" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_new_movie.xml" value="0.264" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_top.xml" value="0.1" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/activity_top_movie.xml" value="0.2" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/item_movie_grid.xml" value="0.2" />
+        <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/layout/review_items.xml" value="0.2" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/menu/main_menu.xml" value="0.72" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/menu/menu_item.xml" value="0.264" />
         <entry key="..\:/Users/arezo/AndroidStudioProjects/AssignmentTwo/app/src/main/res/menu/search_menu.xml" value="0.264" />
@@ -32,7 +34,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.1" />
+        <option name="scale" value="0.264" />
       </ProjectState>
     </option>
   </component>

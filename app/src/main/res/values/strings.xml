@@ -17,6 +17,10 @@
     <string name="profile">profile</string>
     <string name="add_new_movie">Add New Movie</string>
     <string name="log_out">Log Out</string>
+    <string name="textview">TextView</string>
+    <string name="textview">TextView</string>
+    <string name="textview">TextView</string>
+    <string name="textview">TextView</string>
     <string-array name="imdbrating">
         <item>1</item>
         <item>1.5</item>
