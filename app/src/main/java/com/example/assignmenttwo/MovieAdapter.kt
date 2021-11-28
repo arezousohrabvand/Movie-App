@@ -10,9 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 
-class MovieAdapter (
-    val  context: Context,
-    val movies: List<Movies>):RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
+class MovieAdapter(
+    val context: Context,
+    val movies: List<Movies>,val clickListener:OnMovieItemClickListener
+):RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
         inner class  MovieViewHolder(itemView : View) :RecyclerView.ViewHolder(itemView){
             val filmTextView=itemView.findViewById<TextView>(R.id.filmName)
             val genreTextView=itemView.findViewById<TextView>(R.id.genreMovie)
@@ -23,6 +24,9 @@ class MovieAdapter (
 
         }
 
+
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         val inflater=LayoutInflater.from(parent.context)
         val view=inflater.inflate(R.layout.item_movie_grid,parent,false)
@@ -31,28 +35,28 @@ class MovieAdapter (
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie=movies[position]
-        with(holder){
-            filmTextView.text=movie.movieName
-            genreTextView.text=movie.genreMovie
-            summartTextView.text=movie.summaryMovie
-            directorTextView.text=movie.directorMovie
-            rating.rating=movie.imdbrating!!.toFloat()
 
-
-
+            holder.filmTextView.text=movie.movieName
+            holder.genreTextView.text=movie.genreMovie
+            holder.summartTextView.text=movie.summaryMovie
+            holder.directorTextView.text=movie.directorMovie
+            holder.rating.rating=movie.imdbrating!!.toFloat()
+        holder.itemView.setOnClickListener{
+            clickListener.onItemClicked(movie)
         }
+
 
     }
 
     override fun getItemCount(): Int {
         return  movies.size
     }
+    interface OnMovieItemClickListener{
+        fun onItemClicked(movie:Movies)
+    }
+
+
 
     }
 
-interface OnMovieClickListener {
-    fun onMovieClicked(movies: Movies,position: Int)
 
-
-
-}

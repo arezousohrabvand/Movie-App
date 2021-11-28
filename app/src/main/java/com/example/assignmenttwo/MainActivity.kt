@@ -72,5 +72,8 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+    interface OnMovieItemClickListener{
+        fun onItemClicked(movie:Movies ,position:Int)
+    }
 
 }

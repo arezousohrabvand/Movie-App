@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Movie App</string>
     <string name="add_your_movie_here">add your movie here</string>
     <string name="add_your_genre">add your genre</string>
@@ -17,10 +17,18 @@
     <string name="profile">profile</string>
     <string name="add_new_movie">Add New Movie</string>
     <string name="log_out">Log Out</string>
-    <string name="textview">TextView</string>
-    <string name="textview">TextView</string>
-    <string name="textview">TextView</string>
-    <string name="textview">TextView</string>
+    <string name="enter_your_name_here" tools:ignore="DuplicateDefinition">Enter your name</string>
+    <string name="do_you_like_this_movie">Do you like this movie?</string>
+    <string name="what_is_your_favorite_part">what is your favorite part</string>
+    <string name="do_you_recommend_this_movie_to_people_watch_it">Do you recommend this movie to people watch it?</string>
+    <string name="save_btn">Save</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="do_you_like_the_movie">Do you like the movie?</string>
+    <string name="which_part_of_film_is_your_favorite_scene">Which part of film is your Favorite Scene?</string>
+    <string name="save_button">Save</string>
+    <string name="do_you_recommend_this_to_other_people">Do you recommend this to other people?</string>
+    <string name="submit">Submit</string>
+
     <string-array name="imdbrating">
         <item>1</item>
         <item>1.5</item>

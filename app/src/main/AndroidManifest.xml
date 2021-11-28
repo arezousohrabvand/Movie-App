@@ -10,8 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentTwo">
         <activity
-            android:name=".MovieReviewActivity"
-            android:exported="false" />
+            android:name=".ReviewActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".SigninActivity"
             android:exported="true">

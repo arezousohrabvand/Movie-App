@@ -12,7 +12,9 @@
         android:icon="@drawable/profile"
         android:iconTint="#00004d"
         android:title="@string/profile"
-        app:showAsAction="always" />
+        app:showAsAction="always"
+
+        />
     <item
         android:id="@+id/add"
         android:icon="@drawable/add"
