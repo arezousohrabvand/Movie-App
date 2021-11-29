@@ -16,6 +16,6 @@
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/TextAppearance.AppCompat">
         <item name="android:textSize">30dp</item>
         <item name="android:textColor">@color/title_color</item>
-        <item name="android:fontFamily">cursive</item>
+        <item name="android:fontFamily">fantasy</item>
     </style>
 </resources>

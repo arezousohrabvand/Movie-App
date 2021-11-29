@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.assignmenttwo">
+    package="com.GC200387480.assignmenttwo">
 
     <application
         android:allowBackup="true"
@@ -10,12 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentTwo">
         <activity
-            android:name=".ReviewActivity"
-            android:exported="true"
-            android:parentActivityName=".MainActivity" />
-
+            android:name="com.GC200387480.assignmenttwo.ProfileActivity"
+            android:exported="false" />
         <activity
-            android:name=".SigninActivity"
+            android:name="com.GC200387480.assignmenttwo.ReviewActivity"
+            android:exported="true"
+            android:parentActivityName="com.GC200387480.assignmenttwo.MovieRecyclerActivity" />
+        <activity
+            android:name="com.GC200387480.assignmenttwo.SigninActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,19 +26,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MovieRecyclerActivity"
+            android:name="com.GC200387480.assignmenttwo.MovieRecyclerActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.GC200387480.assignmenttwo.MainActivity" />
+
         <activity
-            android:name=".MovieListActivity"
+            android:name="com.GC200387480.assignmenttwo.NewMovieActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.GC200387480.assignmenttwo.MainActivity" />
         <activity
-            android:name=".NewMovieActivity"
-            android:exported="true"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".MainActivity"
+            android:name="com.GC200387480.assignmenttwo.MainActivity"
             android:exported="true" />
     </application>
 
