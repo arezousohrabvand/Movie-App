@@ -18,6 +18,10 @@ class MovieRecyclerActivity : AppCompatActivity(),MovieAdapter.OnMovieItemClickL
         super.onCreate(savedInstanceState)
         binding=ActivityMovieRecyclerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.addFloatBtn.setOnClickListener{
+            val intent=Intent(this,NewMovieActivity::class.java)
+            startActivity(intent)
+        }
 
 
         val viewModel:MovieListViewModel by viewModels()
@@ -66,23 +70,21 @@ class MovieRecyclerActivity : AppCompatActivity(),MovieAdapter.OnMovieItemClickL
             return true
         }
         if(id == R.id.profile){
-            AuthUI.getInstance().signOut(this)
-                .addOnSuccessListener {
-                    val intent = Intent(this, ProfileActivity::class.java)
+
+                    val intent = Intent(this, AboutMeActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(this, "You choose Profile page", Toast.LENGTH_SHORT).show()
-                }
+
         }
         if(id == R.id.homepage){
-            AuthUI.getInstance().signOut(this)
-                .addOnSuccessListener {
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(this, "You choose Home page", Toast.LENGTH_SHORT).show()
-                }
+
         }
         return super.onOptionsItemSelected(item)
     }
+
 
 
 

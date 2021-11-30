@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentTwo">
         <activity
-            android:name="com.GC200387480.assignmenttwo.ProfileActivity"
-            android:exported="false" />
+            android:name="com.GC200387480.assignmenttwo.AboutMeActivity"
+            android:exported="true"
+            android:parentActivityName="com.GC200387480.assignmenttwo.MainActivity"
+
+
+            />
         <activity
             android:name="com.GC200387480.assignmenttwo.ReviewActivity"
             android:exported="true"

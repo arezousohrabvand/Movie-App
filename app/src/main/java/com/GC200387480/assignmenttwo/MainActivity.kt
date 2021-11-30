@@ -8,14 +8,17 @@ import android.view.MenuItem
 import android.widget.Toast
 import com.GC200387480.assignmenttwo.databinding.ActivityMainBinding
 import com.firebase.ui.auth.AuthUI
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
     //setup view binding
     private lateinit var binding: ActivityMainBinding
+    private  val authenticateDatabese=FirebaseAuth.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.newMovieBtn.setOnClickListener{
             var intent= Intent(this,MovieRecyclerActivity::class.java)
             startActivity(intent)
@@ -39,9 +42,20 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this, "Successfully Log Out", Toast.LENGTH_SHORT).show()
                 }
         }
+        if(authenticateDatabese.currentUser==null)
+            logout()
+        else{
+            authenticateDatabese.currentUser?.let { user->
+                binding.userInputTextView.text=user.displayName
+                binding.emailTextView.text=user.email
+
+            }
+        }
 
 
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_item,menu)
@@ -71,25 +85,27 @@ class MainActivity : AppCompatActivity() {
             return true
         }
         if(id == R.id.profile){
-            AuthUI.getInstance().signOut(this)
-                .addOnSuccessListener {
-                    val intent = Intent(this, ProfileActivity::class.java)
+
+                    val intent = Intent(this, AboutMeActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(this, "You choose Profile page", Toast.LENGTH_SHORT).show()
-                }
+
         }
         if(id == R.id.homepage){
-            AuthUI.getInstance().signOut(this)
-                .addOnSuccessListener {
+
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(this, "You choose Home page", Toast.LENGTH_SHORT).show()
-                }
+
         }
         return super.onOptionsItemSelected(item)
     }
     interface OnMovieItemClickListener{
         fun onItemClicked(movie:Movies ,position:Int)
+    }
+    private fun logout() {
+        authenticateDatabese.signOut()
+        startActivity(Intent(this,SigninActivity::class.java))
     }
 
 }
