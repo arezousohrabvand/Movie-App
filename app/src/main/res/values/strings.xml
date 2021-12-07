@@ -28,6 +28,8 @@
     <string name="save_button">Save</string>
     <string name="do_you_recommend_this_to_other_people">Do you recommend this to other people?</string>
     <string name="submit">Submit</string>
+    <string name="sign_in_with_your_email">Sign in With your Email</string>
+    <string name="enter_your_email_address">Enter your email address</string>
 
     <string-array name="imdbrating">
         <item>1</item>
@@ -51,4 +53,16 @@
         <item>10</item>
 
     </string-array>
+    <string-array name="genreChoices">
+        <item>Action</item>
+        <item>Drama</item>
+        <item>Documentary</item>
+        <item>Horror</item>
+        <item>Romance</item>
+        <item>Comedy</item>
+        <item>Western</item>
+
+    </string-array>
+
+
 </resources>

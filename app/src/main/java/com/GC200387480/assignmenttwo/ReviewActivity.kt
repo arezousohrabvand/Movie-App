@@ -68,7 +68,8 @@ class ReviewActivity : AppCompatActivity() {
 
         }
         }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
+    /*override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_item,menu)
         return super.onCreateOptionsMenu(menu)
     }
@@ -110,7 +111,7 @@ class ReviewActivity : AppCompatActivity() {
 
         }
         return super.onOptionsItemSelected(item)
-    }
+    }*/
 
 
 

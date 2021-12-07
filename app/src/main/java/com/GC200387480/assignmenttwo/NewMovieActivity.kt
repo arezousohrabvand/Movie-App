@@ -1,5 +1,6 @@
 package com.GC200387480.assignmenttwo
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,15 +24,15 @@ class NewMovieActivity : AppCompatActivity() {
         binding.saveBtn.setOnClickListener{
             if(binding.addMovieEditText.text.toString().isNotEmpty() &&
                 binding.addSummary.text.toString().isNotEmpty() &&
-                    binding.addWriter.text.toString().isNotEmpty()&&
-                    binding.addGenre.text.toString().isNotEmpty()&&
-                    binding.addDirector.text.toString().isNotEmpty()&&
-                    binding.addStars.text.toString().isNotEmpty()&& binding.spinner.selectedItemPosition>0
-                    ){
+                binding.addWriter.text.toString().isNotEmpty()&&
+                binding.genreSpinner.selectedItemPosition>0&&
+                binding.addDirector.text.toString().isNotEmpty()&&
+                binding.addStars.text.toString().isNotEmpty()&& binding.spinner.selectedItemPosition>0
+            ){
                 val movies=Movies()
                 movies.movieName=binding.addMovieEditText.text.toString()
                 movies.directorMovie=binding.addDirector.text.toString()
-                movies.genreMovie=binding.addGenre.text.toString()
+                movies.genreMovie=binding.genreSpinner.selectedItem.toString()
                 movies.summaryMovie=binding.addSummary.text.toString()
                 movies.writerMovie=binding.addWriter.text.toString()
                 movies.starMovie=binding.addStars.text.toString()
@@ -48,7 +49,7 @@ class NewMovieActivity : AppCompatActivity() {
                         Toast.makeText(this,"Your movie information added",Toast.LENGTH_LONG).show()
                         binding.addMovieEditText.setText("")
                         binding.addDirector.setText("")
-                        binding.addGenre.setText("")
+                        binding.genreSpinner.setSelection(0)
                         binding.addStars.setText("")
                         binding.addWriter.setText("")
                         binding.addSummary.setText("")
@@ -68,8 +69,9 @@ class NewMovieActivity : AppCompatActivity() {
 
         }
 
+
     }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    /*override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_item,menu)
         return super.onCreateOptionsMenu(menu)
     }
@@ -111,5 +113,5 @@ class NewMovieActivity : AppCompatActivity() {
 
         }
         return super.onOptionsItemSelected(item)
-    }
+    }*/
 }

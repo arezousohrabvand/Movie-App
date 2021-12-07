@@ -9,6 +9,8 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class MovieListViewModel :ViewModel(){
     private val movies = MutableLiveData<List<Movies>>()
+
+
     init {
         showMovies()
     }
@@ -27,6 +29,7 @@ class MovieListViewModel :ViewModel(){
 
 
             val moviesList = ArrayList<Movies>()
+
 
 
             documents?.let{

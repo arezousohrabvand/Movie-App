@@ -18,8 +18,14 @@ class MovieRecyclerActivity : AppCompatActivity(),MovieAdapter.OnMovieItemClickL
         super.onCreate(savedInstanceState)
         binding=ActivityMovieRecyclerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.addFloatBtn.setOnClickListener{
             val intent=Intent(this,NewMovieActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.backFloatBtn.setOnClickListener{
+            val intent=Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
 
@@ -91,24 +97,25 @@ class MovieRecyclerActivity : AppCompatActivity(),MovieAdapter.OnMovieItemClickL
     /*override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.search_menu,menu)
         var menuItem=menu!!.findItem(R.id.searchbar)
+
         var searchView=menuItem.actionView as SearchView
-        searchView.maxWidth= Int.MAX_VALUE
+
 
         searchView.setOnQueryTextListener(object:SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
-                return true
+                return false
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                Log.e("TAG","====>$newText")
-                return true
+
+                return false
             }
 
         })
 
 
 
-        return true
+      return true
     }*/
 
 
